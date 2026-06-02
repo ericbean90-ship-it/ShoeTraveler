@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
+import { HeaderAuth } from "@/components/auth/header-auth";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,13 +55,7 @@ export function Header() {
             </Link>
           </nav>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              로그인
-            </Button>
-            <Button size="sm">앱 다운로드</Button>
-          </div>
+          <HeaderAuth />
 
           {/* Mobile Menu Button */}
           <button
@@ -117,10 +111,7 @@ export function Header() {
                 채용정보
               </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="w-full justify-center">
-                  로그인
-                </Button>
-                <Button className="w-full">앱 다운로드</Button>
+                <HeaderAuth variant="mobile" />
               </div>
             </div>
           </nav>
