@@ -39,7 +39,7 @@ export function LoginForm({ redirectTo = "/memo" }: LoginFormProps) {
             로그인
           </CardTitle>
           <CardDescription className="mt-2">
-            신발여행자 계정으로 아이의 이야기를 기록해요
+            신발여행자 계정으로 고객 게시판을 이용해요
           </CardDescription>
         </div>
       </CardHeader>
