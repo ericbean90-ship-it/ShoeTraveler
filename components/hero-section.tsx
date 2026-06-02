@@ -20,10 +20,16 @@ export function HeroSection() {
               <span>친환경 중고 신발 거래 플랫폼</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 font-[family-name:var(--font-heading)] text-balance">
-              작아진 신발, 버리기엔
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-foreground leading-snug mb-6 font-[family-name:var(--font-heading)] text-balance">
+              새 것같은 신발, 버리지 마세요. 쌓아두지도 마세요.
               <br />
-              <span className="text-primary">너무 아깝잖아요</span>
+              우리 아이에게 헐렁하게 신기지도 마세요.
+              <br />
+              아이의 신발을 여행보내고, 새로운 여행자를 맞이하세요.
+              <br />
+              <span className="text-primary">
+                그리고 우리 아이에게 깨끗한 환경을 선물하세요.
+              </span>
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
