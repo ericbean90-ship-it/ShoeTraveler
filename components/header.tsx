@@ -6,6 +6,9 @@ import { Menu, X } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
 import { HeaderAuth } from "@/components/auth/header-auth";
 
+const customerBoardLinkClass =
+  "inline-flex items-center px-5 py-2 rounded-full text-sm font-medium bg-accent text-accent-foreground hover:bg-accent/90 transition-colors";
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -46,6 +49,9 @@ export function Header() {
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               문의하기
+            </Link>
+            <Link href="/memo" className={customerBoardLinkClass}>
+              고객 게시판
             </Link>
             <Link
               href="/careers"
@@ -102,6 +108,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 문의하기
+              </Link>
+              <Link
+                href="/memo"
+                className={`${customerBoardLinkClass} self-start`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                고객 게시판
               </Link>
               <Link
                 href="/careers"

@@ -45,9 +45,6 @@ export function HeaderAuth({ variant = "desktop" }: HeaderAuthProps) {
   if (user) {
     return isDesktop ? (
       <div className="hidden md:flex items-center gap-3">
-        <Button variant="ghost" size="sm" asChild>
-          <Link href="/memo">고객 게시판</Link>
-        </Button>
         <form action={signOut}>
           <Button variant="outline" size="sm" type="submit">
             로그아웃
@@ -55,16 +52,11 @@ export function HeaderAuth({ variant = "desktop" }: HeaderAuthProps) {
         </form>
       </div>
     ) : (
-      <div className="flex flex-col gap-2 w-full">
-        <Button variant="ghost" className="w-full justify-center" asChild>
-          <Link href="/memo">고객 게시판</Link>
+      <form action={signOut} className="w-full">
+        <Button variant="outline" className="w-full" type="submit">
+          로그아웃
         </Button>
-        <form action={signOut} className="w-full">
-          <Button variant="outline" className="w-full" type="submit">
-            로그아웃
-          </Button>
-        </form>
-      </div>
+      </form>
     );
   }
 
